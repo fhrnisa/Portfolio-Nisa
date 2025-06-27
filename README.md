@@ -6,7 +6,7 @@ This is my personal portfolio website showcasing my work and experiences as a UI
 ## ✨ Key Features:
 - Responsive design for desktop and mobile
 - About, Projects, and Contact sections
-- Social links (LinkedIn, Instagram, Gmail)
+- Social links (LinkedIn, Instagram, Gmail, Github)
 - Minimal and user-friendly interface
 
 ## 🛠️ Tools & Tech Stack:
