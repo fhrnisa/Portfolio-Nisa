@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeeMath Project Detail</title>
+    <link rel="icon" type="img/png" href="../../asset/img/fk-logo-white.png">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-emerald-50 via-white to-yellow-50 font-sans flex flex-col min-h-screen">
+    <div class="fixed inset-0 z-0 pointer-events-none bg-[url('../../asset/img/noise.png')] bg-repeat bg-fixed mix-blend-multiply"></div>
+
+<!-- Navbar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center p-3 md:p-6 px-6 md:px-28 bg-white/10 backdrop-blur z-50">
+  <div class="text-2xl font-bold">
+    <a href="../../index.html"><img src="../../asset/img/fk-logo.png" class="w-7 md:w-10 h-auto" alt="Logo"></a>
+  </div>
+
+  <!-- Desktop Menu -->
+  <nav class="hidden md:flex space-x-12 text-gray-800">
+    <a href="../about.html" class="hover:underline text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">About Me</a>
+    <a href="../project.html" class="hover:underline text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">Project</a>
+    <a href="../contact.html" class="hover:underline text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">Contact</a>
+  </nav>
+
+  <!-- Mobile Menu Button -->
+  <div class="md:hidden flex items-center">
+    <button id="menuBtn" class="text-gray-800 focus:outline-none">
+      <img id="menuIcon" src="../../asset/img/menu-icon.png" class="w-8 h-auto" alt="Menu Icon">
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden fixed top-14 left-0 w-full items-center bg-white/10 backdrop-blur-lg z-40 flex flex-col space-y-4 p-6 text-gray-800 md:hidden transition-all duration-300">
+  <a href="../about.html" class="hover:underline text-base md:text-lg" style="font-family: 'Open Sans', sans-serif;">About Me</a>
+  <a href="../project.html" class="hover:underline text-base md:text-lg" style="font-family: 'Open Sans', sans-serif;">Project</a>
+  <a href="../contact.html" class="hover:underline text-base md:text-lg" style="font-family: 'Open Sans', sans-serif;">Contact</a>
+</div>
+
+<section class="min-h-screen py-12 px-6 md:px-24 mt-12 md:mt-20 z-10">
+  <div class="max-w-5xl mx-auto text-center">
+    <!-- Judul -->
+    <h1 class="text-2xl md:text-5xl font-bold font-serif text-stone-800" style="font-family: 'Merriweather', serif;">BeeMath: Math Puzzle Adventures</h1>
+    <p class="mt-2 text-sm md:text-xl text-gray-600" style="font-family: 'Open Sans', sans-serif;">
+      Project Based Learning (PjBL) – SMK Negeri 8 Semarang (July 2024 - June 2025)
+    </p>
+
+    <!-- Gambar Mockup -->
+    <div class="mt-5 md:mt-10">
+      <img src="../../asset/img/BeeMath-mockup-preview.png" alt="BeeMath Project" class="mx-auto shadow rounded-sm w-full">
+    </div>
+
+    <!-- Role & Tools -->
+    <div class="mt-6 md:mt-12 grid md:grid-cols-2 gap-4 md:gap-8 text-left">
+      <!-- My Role -->
+      <div>
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2" style="font-family: 'Merriweather', serif;">My Role</h3>
+        <ul class="list-none text-gray-800 text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+          <li>UI Designer</li>
+          <li>Asset Designer</li>
+          <li>Game Music Producer</li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div>
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2" style="font-family: 'Merriweather', serif;">Tools</h3>
+        <ul class="list-none text-gray-800 text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+          <li>Figma (UI & Game Asset Design)</li>
+          <li>Bandlab (Game Music Maker)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="mt-6 md:mt-12 text-left">
+      <h3 class="text-2xl md:text-4xl font-semibold mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">Project Overview</h3>
+      <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        BeeMath is a math crossword puzzle application designed to enhance math skills, problem solving abilities, and critical thinking 
+        for children aged 8–12 years. Developed on Android mobile platform using Unity. This project was created as part of a Project Based Learning (PjBL) 
+        program, where I contributed in the areas of UI design, asset creation, and music production.
+      </p>
+    </div>
+
+    <div class="mt-6 md:mt-12 mb-6 md:mb-12 text-left">
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">Project Background</h3>
+        <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        In today’s digital era, elementary school children frequently access online games. Indonesia is recorded as having the third-largest online gaming market in the world, yet much of its content lacks educational value. 
+        <br><br>
+        Many students struggle to grasp basic mathematical concepts because they find math to be a boring subject. Additionally, the math proficiency of Indonesian students declined in 2022.
+        </p>
+    </div>
+
+    <!-- Berita -->
+    <div class="text-center">
+      <img src="../../asset/img/data-riset-1.png" alt="Berita Nasional" class="mx-auto rounded-sm shadow mb-2">
+      <p class="text-sm italic text-gray-600">Source: nasional.sindonews.com</p>
+    </div>
+
+    <!-- Bagian Grafik -->
+    <div class="grid md:grid-cols-2 gap-3 md:gap-6 mt-3 md:mt-10 text-center">
+      <!-- Grafik 1 -->
+      <div>
+        <img src="../../asset/img/data-riset-2.png" alt="Grafik 1" class="mx-auto rounded-sm shadow">
+        <p class="text-sm italic text-gray-600 mt-2">Source: databoks.com</p>
+      </div>
+      <!-- Grafik 2 -->
+      <div>
+        <img src="../../asset/img/data-riset-3.png" alt="Grafik 2" class="mx-auto rounded-sm shadow">
+        <p class="text-sm italic text-gray-600 mt-2">Source: databoks.com</p>
+      </div>
+    </div>
+
+    <div class="mt-6 md:mt-12 grid md:grid-cols-2 gap-4 md:gap-8 text-left">
+    <!-- Solution -->
+      <div>
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">Solution</h3>
+        <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+          To address this challenge, we designed BeeMath with the following features:
+        </p>
+        <ul class="list-disc list-inside text-sm md:text-xl text-gray-800 mt-2 space-y-1"style="font-family: 'Open Sans', sans-serif;">
+          <li>Tiered-level educational puzzles</li>
+          <li>A mascot character, engaging visuals, and child-friendly design</li>
+          <li>A scoring system and leaderboard</li>
+        </ul>
+      </div>
+
+    <!-- User Target -->
+      <div>
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">User Target</h3>
+        <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+          Targeted at children aged 8–12, in line with the stage of learning basic arithmetic operations, the crossmath game offers a fun and interactive learning experience. Additionally, BeeMath is also suitable for users over the age of 12 who want to sharpen their calculation skills while enjoying a challenge.
+        </p>
+      </div>
+
+    <!-- Objectives -->
+      <div class="mt-2 md:mt-4">
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">Objectives</h3>
+        <ul class="list-disc list-inside text-sm md:text-xl text-gray-800 mt-2 space-y-1"style="font-family: 'Open Sans', sans-serif;">
+          <li>Helping users improve their math skills</li>
+          <li>Helping users develop problem-solving and critical thinking abilities</li>
+          <li>Providing an entertaining yet challenging medium for learning</li>
+        </ul>
+      </div>
+
+      <div class="mt-2 md:mt-4">
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">Benefits</h3>
+        <ul class="list-disc list-inside text-sm md:text-xl text-gray-800 mt-2 space-y-1"style="font-family: 'Open Sans', sans-serif;">
+          <li>Enhancing math skills</li>
+          <li>Sharpening problem-solving and critical thinking abilities</li>
+          <li>Learning through play</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Process -->
+    <div class="max-w-6xl mx-auto text-left">
+    <!-- Semester 1 -->
+    <div class="mt-6 md:mt-12 mb-6 md:mb-12 text-left">
+        <h3 class="text-2xl md:text-4xl font-semibold mb-1 md:mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">Process</h3>
+        <h3 class="text-lg md:text-[28px] font-semibold mt-1 md:mt-4 mb-2 text-gray-800">Semester 1: Initial Exploration & Visual Design</h3>
+        <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        The main focus for the first semester was to establish the visual and functional foundation of this educational math game.
+      We adopted a Design Thinking approach, but had not yet reached the stage of direct user testing. Due to time and technical
+      constraints, user testing was not conducted in this phase.
+        </p>
+    </div>
+
+
+    <!-- 5 Card Design Thinking -->
+    <div class="grid md:grid-cols-2 gap-4 md:gap-8 justify-center mb-6">
+      <!-- Empathize -->
+      <div class="border rounded-lg p-6 text-center shadow-sm bg-white/60 md:w-[320px] md:ml-44">
+        <div class="w-12 h-12 md:w-14 md:h-14 mx-auto flex items-center justify-center mb-2">
+          <img src="../../asset/img/empathize.png" alt="Empathize" class="w-12 h-12 md:w-14 md:h-14">
+        </div>
+        <h4 class="font-semibold text-sm md:text-lg mb-1 md:mb-2" style="font-family: 'Open Sans', sans-serif;">Empathize</h4>
+        <p class="text-gray-700 text-xs md:text-sm leading-relaxed" style="font-family: 'Open Sans', sans-serif;">
+          As a team, we discussed the needs of children aged 8 to 12. I helped identify the core learning challenges in math.
+        </p>
+      </div>
+
+      <!-- Define -->
+      <div class="border rounded-lg p-6 text-center shadow-sm bg-white/60 md:w-[320px]">
+        <div class="w-12 h-12 md:w-14 md:h-14 mx-auto flex items-center justify-center mb-2">
+          <img src="../../asset/img/define.png" alt="Define" class="w-12 h-12 md:w-14 md:h-14">
+        </div>
+        <h4 class="font-semibold text-sm md:text-lg mb-2" style="font-family: 'Open Sans', sans-serif;">Define</h4>
+        <p class="text-gray-700 text-xs md:text-sm leading-relaxed" style="font-family: 'Open Sans', sans-serif;">
+          Together, we defined our goal: helping children learn math through a fun, bee-themed crossword game.
+        </p>
+      </div>
+    </div>
+
+    <!-- Grid Card Baris 2 -->
+    <div class="grid md:grid-cols-3 gap-4 md:gap-6 mt-0 md:mt-8 justify-center">
+      <!-- Ideate -->
+      <div class="border rounded-lg p-6 text-center shadow-sm bg-white/60 md:w-[320px]">
+        <div class="w-12 h-12 md:w-14 md:h-14 mx-auto flex items-center justify-center md:mb-2">
+          <img src="../../asset/img/ideate.png" alt="Ideate" class="w-12 h-12 md:w-14 md:h-14">
+        </div>
+        <h4 class="font-semibold text-sm md:text-lg mb-2" style="font-family: 'Open Sans', sans-serif;">Ideate</h4>
+        <p class="text-gray-700 text-xs md:text-sm leading-relaxed" style="font-family: 'Open Sans', sans-serif;">
+          I contributed to developing the game concept with a cheerful visual tone, featuring Bima the bee as our main guide.
+        </p>
+      </div>
+
+      <!-- Prototype -->
+      <div class="border rounded-lg p-6 text-center shadow-sm bg-white/60 md:w-[320px]">
+        <div class="w-12 h-12 md:w-14 md:h-14 mx-auto flex items-center justify-center md:mb-2">
+          <img src="../../asset/img/prototype.png" alt="Prototype" class="w-12 h-12 md:w-14 md:h-14">
+        </div>
+        <h4 class="font-semibold text-sm md:text-lg mb-2" style="font-family: 'Open Sans', sans-serif;">Prototype</h4>
+        <p class="text-gray-700 text-xs md:text-sm leading-relaxed" style="font-family: 'Open Sans', sans-serif;">
+          I designed the initial UI in Figma, using simple illustrations and a minimal gameplay layout.
+        </p>
+      </div>
+
+      <!-- Coding -->
+      <div class="border rounded-lg p-6 text-center shadow-sm bg-white/60 md:w-[320px]">
+        <div class="w-12 h-12 md:w-14 md:h-14 mx-auto flex items-center justify-center md:mb-2">
+          <img src="../../asset/img/coding.png" alt="Coding" class="w-12 h-12 md:w-14 md:h-14">
+        </div>
+        <h4 class="font-semibold text-sm md:text-lg mb-2" style="font-family: 'Open Sans', sans-serif;">Coding</h4>
+        <p class="text-gray-700 text-xs md:text-sm leading-relaxed" style="font-family: 'Open Sans', sans-serif;">
+          The coding phase was handled by the developers in our team. We faced some technical issues with the leaderboard feature.
+        </p>
+      </div>
+    </div>
+
+    <!-- Low & High Fidelity Wireframe Image -->
+    <div class="items-center mb-4 md:mb-8 mt-8 md:mt-16">
+      <img src="../../asset/img/low-fidelity-wireframe-beemath.png" alt="BeeMath Low Fidelity Wireframe" class="w-full shadow-sm shadow">
+      <p class="text-gray-500 text-xs md:text-base text-center mt-1 md:mt-2">BeeMath Low Fidelity Wireframe</p>
+    </div>
+
+    <div class="items-center mb-4 md:mb-8">
+      <img src="../../asset/img/high-fidelity-wireframe-beemath.png" alt="BeeMath High Fidelity Wireframe" class="w-full shadow-sm shadow">
+      <p class="text-gray-500 text-xs md:text-base text-center mt-1 md:mt-2">BeeMath High Fidelity Wireframe</p>
+    </div>
+
+
+    <!-- Semester 2 -->
+    <div class="mt-8 md:mt-16 mb-4 md:mb-8 text-left">
+      <h3 class="text-lg md:text-[28px] font-semibold md:mt-4 mb-2 text-gray-800" style="font-family: 'Open Sans', sans-serif;">Semester 2: User Feedback, Additional Research, and Feature Refinement</h3>
+      <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        In the second semester, we began involving users directly in the evaluation process. Feedback from students who tried the game became a crucial foundation for further development.
+      </p>
+    </div>
+
+    <div class="mt-1 md:mt-2 mb-4 md:mb-8 text-left">
+      <h4 class="text-[16px] md:text-[24px] font-semibold md:mt-4 text-gray-800" style="font-family: 'Open Sans', sans-serif;">User Testing Summary</h4>
+      <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        We conducted a user testing session with 5 fifth-grade students and 2 elementary school teachers to gather feedback on usability, visuals, and engagement.
+        The goal was to evaluate whether BeeMath was effective, fun, and easy to use for its target users. And based on the testing we conducted, we discovered that:
+      </p>
+    </div>
+
+    <img src="../../asset/img/Table-feedback.png" alt="Feedback Table">
+
+    <div class="mt-6 md:mt-12 mb-4 md:mb-8 text-left">
+      <h4 class="text-[16px] md:text-[24px] font-semibold md:mt-4 text-gray-800" style="font-family: 'Open Sans', sans-serif;">Improvements and Development</h4>
+      <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        After discussion, we decided to carry out several improvements and developments, including:
+        <ul class="list-disc ml-4 md:ml-8 text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;"">
+          <li>Fixing bugs in the game.</li>
+          <li>Improving the question system in the game.</li>
+          <li>Adding a storyboard.</li>
+          <li>Enhancing the gameplay appearance, such as by adding a background.</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="mt-6 md:mt-12 mb-4 md:mb-8 text-left">
+      <h4 class="text-[16px] md:text-[24px] font-semibold md:mt-4 text-gray-800" style="font-family: 'Open Sans', sans-serif;">Note</h4>
+      <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        Due to time constraints and the technical limitations of the team, the application still has a number of unresolved bugs. Some features, such as the leaderboard, the level-locking system on the game map, and hint feature, are not yet functioning optimally. 
+        Nevertheless, this process has provided valuable lessons, especially in terms of planning, collaboration, and applying user feedback for future development.
+      </p>
+    </div>
+
+    <h3 class="text-2xl md:text-4xl font-semibold mt-8 md:mt-16" style="font-family: 'Merriweather', serif;">Final Design</h3>
+    <img src="../../asset/img/final-design-beemath.png" alt="Final Design BeeMath" class="shadow-sm shadow rounded-sm md:mt-8">
+    <p class="text-gray-800 leading-relaxed text-sm md:text-xl mt-5 md:mt-10" style="font-family: 'Open Sans', sans-serif;"><strong>Click to view prototype in Figma:</strong> <a href="https://encr.pw/beemath-prototype">https://encr.pw/beemath-prototype</a></p>
+    
+</div>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="border-t border-gray-800 flex flex-row justify-between items-center p-4 md:px-28 text-gray-900">
+    <div class="text-xs md:text-lg" style="font-family: 'Open Sans', sans-serif;">©2025 Fahrunnisa. All Rights Reserved.</div>
+    <div class="flex space-x-2 md:space-x-4">
+        <a href="https://www.linkedin.com/in/fahrunnisa-kusumawardani/" class="hover"><img src="../../asset/img/linkedin-icon.png" class="w-4 h-auto md:w-8"></a>
+    </div>
+</footer>
+
+
+<!-- Scripts -->
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const menuIcon = document.getElementById('menuIcon');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  let menuOpen = false;
+
+  menuBtn.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    mobileMenu.classList.toggle('hidden');
+
+    // Ganti ikon antara menu dan silang
+    if (menuOpen) {
+      menuIcon.src = "../../asset/img/close-icon.png"; // ganti ke ikon silang
+    } else {
+      menuIcon.src = "../../asset/img/menu-icon.png"; // ganti ke ikon menu
+    }
+  });
+</script>
+
+</body>
+</html>
