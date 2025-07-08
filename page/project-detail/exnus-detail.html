@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Nusantara Project Detail</title>
+    <link rel="icon" type="img/png" href="../../asset/img/fk-logo-white.png">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-emerald-50 via-white to-yellow-50 font-sans flex flex-col min-h-screen">
+    <div class="fixed inset-0 z-0 pointer-events-none bg-[url('../../asset/img/noise.png')] bg-repeat bg-fixed mix-blend-multiply"></div>
+
+<!-- Navbar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center p-3 md:p-6 px-6 md:px-28 bg-white/10 backdrop-blur z-50">
+  <div class="text-2xl font-bold">
+    <a href="../../index.html"><img src="../../asset/img/fk-logo.png" class="w-7 md:w-10 h-auto" alt="Logo"></a>
+  </div>
+
+  <!-- Desktop Menu -->
+  <nav class="hidden md:flex space-x-12 text-gray-800">
+    <a href="../about.html" class="hover:underline text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">About Me</a>
+    <a href="../project.html" class="hover:underline text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">Project</a>
+    <a href="../contact.html" class="hover:underline text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">Contact</a>
+  </nav>
+
+  <!-- Mobile Menu Button -->
+  <div class="md:hidden flex items-center">
+    <button id="menuBtn" class="text-gray-800 focus:outline-none">
+      <img id="menuIcon" src="../../asset/img/menu-icon.png" class="w-8 h-auto" alt="Menu Icon">
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden fixed top-14 left-0 w-full items-center bg-white/10 backdrop-blur-lg z-40 flex flex-col space-y-4 p-6 text-gray-800 md:hidden transition-all duration-300">
+  <a href="../about.html" class="hover:underline text-base md:text-lg" style="font-family: 'Open Sans', sans-serif;">About Me</a>
+  <a href="../project.html" class="hover:underline text-base md:text-lg" style="font-family: 'Open Sans', sans-serif;">Project</a>
+  <a href="../contact.html" class="hover:underline text-base md:text-lg" style="font-family: 'Open Sans', sans-serif;">Contact</a>
+</div>
+
+<section class="min-h-screen py-12 px-6 md:px-24 mt-10 md:mt-20 z-10">
+  <div class="max-w-5xl mx-auto text-center">
+    <!-- Judul -->
+    <h1 class="text-3xl md:text-5xl font-bold font-serif text-stone-800" style="font-family: 'Merriweather', serif;">Explore Nusantara: Explore Tourist Attractions in Indonesia</h1>
+    <p class="mt-2 text-sm md:text-xl text-gray-600" style="font-family: 'Open Sans', sans-serif;">
+      Capstone Project – Coding Camp 2025 (Mar - Apr 2025)
+    </p>
+
+    <!-- Gambar Mockup -->
+    <div class="mt-5 md:mt-10">
+      <img src="../../asset/img/Exnus-mockup-preview.png" alt="Explore Nusantara Project" class="mx-auto shadow rounded-sm w-full">
+    </div>
+
+    <!-- Role & Tools -->
+    <div class="mt-6 md:mt-12 grid md:grid-cols-2 gap-4 md:gap-8 text-left">
+      <!-- My Role -->
+      <div>
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2" style="font-family: 'Merriweather', serif;">My Role</h3>
+        <ul class="list-none text-gray-800 text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+          <li>UI/UX Designer</li>
+          <li>Front End Developer</li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div>
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2" style="font-family: 'Merriweather', serif;">Tools</h3>
+        <ul class="list-none text-gray-800 text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+          <li>Figma (UI/UX Design)</li>
+          <li>Visual Studio Code (Front End)</li>
+          <li>Github</li>
+        </ul>
+      </div>
+    </div>
+      
+      <!-- Overview -->
+      <div class="mt-6 md:mt-12 text-left">
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">Project Overview</h3>
+        <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+          Explore Nusantara is a web-based platform that recommends Indonesian travel and cultural destinations using Machine Learning technology.
+          This application helps travelers discover the best destinations based on their personal preferences, interests, and needs.
+        </p>
+      </div>
+
+    <div class="mt-6 md:mt-12 mb-6 md:mb-12 text-left">
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">Project Background</h3>
+        <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        Indonesia, as the largest archipelagic country in the world, holds vast and diverse potential in tourism and cultural heritage. However, this great potential has not been fully optimized, particularly in terms of promoting and disseminating information about tourist destinations. Although the tourism industry continues to grow, there are several fundamental challenges, including:
+    </p>
+    <ol class="list-decimal list-inside leading-relaxed text-gray-800 text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        <li><strong>Lack of effective and evenly distributed digital marketing strategies</strong>, especially in regions that have yet to benefit from modern promotional infrastructure.</li>
+        <li><strong>Many beautiful and unique destinations in remote areas remain underexposed</strong>.</li>
+        <li><strong>Limited access to accurate and reliable information about tourist destinations</strong>, including pricing, location, accessibility, and local cultural activities.</li>
+        <li><strong>Tourists rely heavily on social media and blogs for information</strong>, which often lacks completeness or is not tailored to their preferences.</li>
+        <li><strong>Absence of an integrated digital platform</strong> that can provide personalized destination recommendations based on user interests and needs.</li>
+    </ol>
+    </div>
+
+    <div class="mt-6 md:mt-12 mb-6 md:mb-12 text-left">
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">Solution</h3>
+        <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        These challenges form the basis for developing a <strong>machine learning-based tourism and cultural recommendation website</strong>, which aims to:
+    </p>
+    <ul class="list-disc list-inside leading-relaxed text-gray-800 text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        <li>Provide complete and trustworthy travel information,</li>
+        <li>Offer personalized destination recommendations (e.g., nature, culture, culinary),</li>
+        <li>Increase the exposure of local destinations through an inclusive and adaptive digital approach,</li>
+        <li>And help travelers plan more meaningful and interest-aligned trips.</li>
+    </ul>
+    </div>
+
+    <!-- Final Design -->
+    <h3 class="text-2xl md:text-4xl font-semibold mt-8 md:mt-16 text-left" style="font-family: 'Merriweather', serif;">Final Design</h3>
+    <img src="../../asset/img/final-design-exnus.png" alt="Final Design BeeMath" class="shadow-sm shadow rounded-sm mt-4 md:mt-8">
+    
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="border-t border-gray-800 flex flex-row justify-between items-center p-4 md:px-28 text-gray-900">
+    <div class="text-xs md:text-lg" style="font-family: 'Open Sans', sans-serif;">©2025 Fahrunnisa. All Rights Reserved.</div>
+    <div class="flex space-x-2 md:space-x-4">
+      <a href="https://www.linkedin.com/in/fahrunnisa-kusumawardani/" class="hover"><img src="../../asset/img/linkedin-icon.png" class="w-4 h-auto md:w-8"></a>
+    </div>
+</footer>
+
+
+<!-- Scripts -->
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const menuIcon = document.getElementById('menuIcon');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  let menuOpen = false;
+
+  menuBtn.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    mobileMenu.classList.toggle('hidden');
+
+    // Ganti ikon antara menu dan silang
+    if (menuOpen) {
+      menuIcon.src = "../../asset/img/close-icon.png"; // ganti ke ikon silang
+    } else {
+      menuIcon.src = "../../asset/img/menu-icon.png"; // ganti ke ikon menu
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cutizone Project Detail</title>
+    <link rel="icon" type="img/png" href="../../asset/img/fk-logo-white.png">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-emerald-50 via-white to-yellow-50 font-sans flex flex-col min-h-screen">
+    <div class="fixed inset-0 z-0 pointer-events-none bg-[url('../../asset/img/noise.png')] bg-repeat bg-fixed mix-blend-multiply"></div>
+
+<!-- Navbar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center p-3 md:p-6 px-6 md:px-28 bg-white/10 backdrop-blur z-50">
+  <div class="text-2xl font-bold">
+    <a href="../../index.html"><img src="../../asset/img/fk-logo.png" class="w-7 md:w-10 h-auto" alt="Logo"></a>
+  </div>
+
+  <!-- Desktop Menu -->
+  <nav class="hidden md:flex space-x-12 text-gray-800">
+    <a href="../about.html" class="hover:underline text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">About Me</a>
+    <a href="../project.html" class="hover:underline text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">Project</a>
+    <a href="../contact.html" class="hover:underline text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">Contact</a>
+  </nav>
+
+  <!-- Mobile Menu Button -->
+  <div class="md:hidden flex items-center">
+    <button id="menuBtn" class="text-gray-800 focus:outline-none">
+      <img id="menuIcon" src="../../asset/img/menu-icon.png" class="w-8 h-auto" alt="Menu Icon">
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden fixed top-14 left-0 w-full items-center bg-white/10 backdrop-blur-lg z-40 flex flex-col space-y-4 p-6 text-gray-800 md:hidden transition-all duration-300">
+  <a href="../about.html" class="hover:underline text-base md:text-lg" style="font-family: 'Open Sans', sans-serif;">About Me</a>
+  <a href="../project.html" class="hover:underline text-base md:text-lg" style="font-family: 'Open Sans', sans-serif;">Project</a>
+  <a href="../contact.html" class="hover:underline text-base md:text-lg" style="font-family: 'Open Sans', sans-serif;">Contact</a>
+</div>
+
+<section class="min-h-screen py-12 px-6 md:px-24 mt-10 md:mt-20 z-10">
+  <div class="max-w-5xl mx-auto text-center">
+    <!-- Judul -->
+    <h1 class="text-3xl md:text-5xl font-bold font-serif text-stone-800" style="font-family: 'Merriweather', serif;">Cutizone: Cuti Management Web App</h1>
+    <p class="mt-2 text-sm md:text-xl text-gray-600" style="font-family: 'Open Sans', sans-serif;">
+      Individual Class Assignment (Sep - Nov 2024)
+    </p>
+
+    <!-- Gambar Mockup -->
+    <div class="mt-5 md:mt-10">
+      <img src="../../asset/img/Cutizone-mockup-preview.png" alt="Cutizone Project" class="mx-auto shadow rounded-sm w-full">
+    </div>
+
+    <!-- Role & Tools -->
+    <div class="mt-6 md:mt-12 grid md:grid-cols-2 gap-4 md:gap-8 text-left">
+      <!-- My Role -->
+      <div>
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2" style="font-family: 'Merriweather', serif;">My Role</h3>
+        <ul class="list-none text-gray-800 text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+          <li>UI Designer</li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div>
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2" style="font-family: 'Merriweather', serif;">Tools</h3>
+        <ul class="list-none text-gray-800 text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+          <li>Figma</li>
+        </ul>
+      </div>
+    </div>
+      
+      <!-- Overview -->
+      <div class="mt-6 md:mt-12 text-left">
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">Project Overview</h3>
+        <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        Cutizone is a simple web-based platform concept designed to help employees submit and manage their leave requests more easily.
+        The idea was born from a class assignment focusing on workplace challenges, and the project was developed individually.
+        </p>
+      </div>
+
+    <div class="mt-6 md:mt-12 mb-6 md:mb-12 text-left">
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">Project Background</h3>
+        <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        The brief given by our teacher was to address a common employee issue. I chose to focus on the hassle of manual leave submissions, which can be unclear, time-consuming, or disorganized in some workplaces.
+    </p>
+    </div>
+
+    <div class="mt-6 md:mt-12 mb-6 md:mb-12 text-left">
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">Solution</h3>
+        <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        A simple landing page that introduces the platform, along with a concept for an easy-to-use leave request form.
+    </p>
+    </div>
+
+    <div class="mt-6 md:mt-12 mb-6 md:mb-12 text-left">
+        <h3 class="text-2xl md:text-4xl font-semibold mb-2 text-stone-800" style="font-family: 'Merriweather', serif;">Project Status</h3>
+        <p class="text-gray-800 leading-relaxed text-sm md:text-xl" style="font-family: 'Open Sans', sans-serif;">
+        This project was not further developed but served as an individual design exploration.
+    </p>
+    </div>
+
+
+    <!-- Final Design -->
+    <h3 class="text-2xl md:text-4xl font-semibold mt-8 md:mt-16 text-left" style="font-family: 'Merriweather', serif;">Landing Page Design</h3>
+    <img src="../../asset/img/final-design-cutizone.png" alt="Final Design BeeMath" class="shadow-sm shadow rounded-sm mt-4 md:mt-8">
+    
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="border-t border-gray-800 flex flex-row justify-between items-center p-4 md:px-28 text-gray-900">
+    <div class="text-xs md:text-lg" style="font-family: 'Open Sans', sans-serif;">©2025 Fahrunnisa. All Rights Reserved.</div>
+    <div class="flex space-x-2 md:space-x-4">
+      <a href="https://www.linkedin.com/in/fahrunnisa-kusumawardani/" class="hover"><img src="../../asset/img/linkedin-icon.png" class="w-4 h-auto md:w-8"></a>
+    </div>
+</footer>
+
+
+<!-- Scripts -->
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const menuIcon = document.getElementById('menuIcon');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  let menuOpen = false;
+
+  menuBtn.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    mobileMenu.classList.toggle('hidden');
+
+    // Ganti ikon antara menu dan silang
+    if (menuOpen) {
+      menuIcon.src = "../../asset/img/close-icon.png"; // ganti ke ikon silang
+    } else {
+      menuIcon.src = "../../asset/img/menu-icon.png"; // ganti ke ikon menu
+    }
+  });
+</script>
+
+</body>
+</html>
