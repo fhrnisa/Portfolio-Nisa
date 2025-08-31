@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     emailjs
-      .send("service_bcb7fmx", "template_9fq4hu2", parms)
+      .send("service_vg41cp7", "template_jlf5e7c", parms)
       .then(function (res) {
         alert("Email has been sent. Thank you!");
         form.reset(); // bersihkan form
